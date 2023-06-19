@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+    <link rel="stylesheet" href="./style/carousel.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Quiet Planet</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        navbar: ['Comfortaa', 'cursive'],
+                        textoTitulo: ['Alumni Sans', 'sans-serif'],
+                        textos: ['Inria Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        'cinza': '#303030'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <nav id="navbar" class="fixed w-full flex justify-around items-center p-3 bg-transparent transition bg-opacity-0">
+        <div class="flex justify-between items-center textoTitulo">
+            <a class="mx-3" href="index.html">
+                <img class="h-16 w-16" src="/img/quietplanet/Logo-sizefix.png" alt="Logo da Quiet Planet">
+            </a>
+            <a class="text-white" href="index.html">Quiet Planet</a>
+        </div>
+        <div class="flex items-center text-white">
+            <a href="index.html">Home</a>
+            <a class="mx-9" href="#">Planetas</a>
+            <a href="#">Info</a>
+            <a href="#" class="text-white mx-9"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-9">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75l-2.489-2.489m0 0a3.375 3.375 0 10-4.773-4.773 3.375 3.375 0 004.774 4.774zM21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg></a>
+        </div>       
+    </nav>
+    <section>
+        <img class="bg-cover bg-no-repeat bg-center w-full" src="/img/quietplanet/landing-page.jpg">
+    </section>
+    <section class="p-44 mx-96">
+        <div class="text-justify font-textoTitulo"> 
+            <p>O nosso sistema solar é composto por oito planetas, e impressionantemente existem mais planetas na nossa galáxia do que estrelas. O sistema solar está localizado em um dos “braços” da Via Láctea. Os oito planetas ficam “presos” orbitando o sol por conta da sua massa exorbitante, que causa um puxo gravitacional. Esses planetas são: Mercúrio, Vênus, Terra, Marte, Júpiter, Saturno, Urano e Netuno.</p>
+            <p class="py-6">Mas além dos planetas nós possuímos também planetas anões como Plutão e Dezenas de luas.</p>
+            <p>No projeto Quiet Planet você pode conhecer quatro dos planetas que orbitam o Sol, a nossa estrela. A terra, Marte, Saturno e Jupiter.</p> 
+        </div>
+    </section>
+    <section class="mx-96 font-textoTitulo">
+        <div class="flex font-textoTitulo justify-center">
+            <h1 class="mb-12 text-3xl">PLANETAS</h1>
+        </div>
+        <div class="container">
+            <div class="card">
+            <h3 class="title">Terra</h3>
+            <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+            </div>
+            <div class="flex">
+                <a class="my-6 mx-6" href="./paginas secundarias/planeta_terra.html"><img src="./img/quietplanet/terra-carrossel.png"></a>
+            </div>
+            </div>
+            <div class="card">
+            <h3 class="title">Marte</h3>
+            <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+            </div>
+            <div class="flex">
+                <a class="mx-6 my-6" href="./paginas secundarias/marte.html">
+                    <img src="./img/quietplanet/Marte-carrossel.png">
+                </a>
+            </div>
+            </div>
+            <div class="card">
+            <h3 class="title">Júpiter</h3>
+            <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+            </div>
+            <div class="flex">
+                <a class="" href="./paginas secundarias/jupiter.html">
+                    <img src="./img/quietplanet/Jupiter-carrossel.png">
+                </a>
+            </div>
+            </div>
+            <div class="card">
+            <h3 class="title">Saturno</h3>
+            <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+            </div>
+            <div class="flex">
+                <a class="my-16" href="./paginas secundarias/saturno.html"><img src="./img/quietplanet/Saturno-carrossel.png"></a>
+            </div>
+            </div>
+        </div>
+    </section>
+    <footer class="p-2 bg-black font-textoTitulo">
+        <h1 class="text-white text-center">© 2023 Quiet Planet. Todos os direitos reservados</h1>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>

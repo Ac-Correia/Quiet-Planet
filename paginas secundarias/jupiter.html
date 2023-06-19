@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/carousel.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Quiet Planet</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        navbar: ['Comfortaa', 'cursive'],
+                        textoTitulo: ['Alumni Sans', 'sans-serif'],
+                        textos: ['Inria Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <nav id="navbar" class="fixed w-full flex justify-around items-center p-3 bg-transparent transition bg-opacity-0">
+        <div class="flex justify-between items-center textoTitulo">
+            <a class="mx-3" href="index.html">
+                <img class="h-16 w-16" src="/img/quietplanet/Logo-sizefix.png" alt="Logo da Quiet Planet">
+            </a>
+            <a class="text-white" href="index.html">Quiet Planet</a>
+        </div>
+        <div class="flex items-center text-white">
+            <a href="index.html">Home</a>
+            <a class="mx-9" href="#">Planetas</a>
+            <a href="#">Info</a>
+            <a href="#" class="text-white mx-9"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-9">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75l-2.489-2.489m0 0a3.375 3.375 0 10-4.773-4.773 3.375 3.375 0 004.774 4.774zM21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg></a>
+        </div>       
+    </nav>
+    <section class="flex p-96 bg-cover bg-center bg-no-repeat" style="background-image: url(/img/quietplanet/Jupiter-pagina.jpg);">
+        <div class="w-1/3 flex flex-col text-white justify-center">
+            <h1 class="text-6xl">Jupiter</h1>
+            <p class="break-all text-justify">Júpiter é o maior planeta do nosso sistema solar. 
+                Ele é o quinto na órbita do Sol e possui, de acordo com as observações de 2023 da NASA, 95 luas.
+            </p>
+        </div>
+        <div class="p-9 flex flex-col border-solid border-black bg-white rounded-md w-1/2 ml-auto font-textoTitulo">
+            <div class="mx-1 py-3 mt-6 text-lg">
+                <h2 class="border-black border-b ">Diametro</h2>
+                <p class="text-end">139.820 KM</p>
+            </div>
+            <div class="mx-1 py-3 text-lg">
+                <h2 class="border-black border-b">Temperatura da superfície</h2>
+                <p class="text-end">-110 C°</p>
+            </div>
+            <div class="mx-1 py-3 text-lg">
+                <h2 class="border-black border-b">Número de luas</h2>
+                <p class="text-end">67</p>
+            </div>
+            <div class="mx-1 py-3 mb-6 text-lg">
+                <h2 class="border-black border-b">Distância da terra</h2>
+                <p class="text-end">~590.000.000 KM</p>
+            </div>
+        </div>
+    </section>
+    <section class="p-44 mx-96">
+        <div class="text-justify font-textoTitulo">
+            <h1 class="mb-6 font-medium text-2xl">Planeta Júpiter</h1>
+            <p class="hyphens-auto">Jupiter pode possuir um núcleo rochoso composto por elementos mais pesados, embora, como os outros planetas gigantes, não possua uma superfície sólida bem definida. 
+                Por causa de sua rotação rápida, de cerca de dez horas, ele possui o formato de uma esfera oblata. 
+                Sua atmosfera externa é visivelmente dividida o que nos dá a visão daquelas várias faixas em sua superfície. Isso também gera as suas tempestades sem fim.
+
+                O planeta gigante também é observável da Terra a olho nu, com uma magnitude aparente máxima de -2,94, sendo no geral o quarto objeto mais brilhante no céu, depois do Sol, da Lua e de Vênus, embora, por vezes, Marte também fique mais brilhante do que Júpiter.
+            </p>
+        </div>
+    </section>
+    <section>
+        <img class="w-full" src="/img/quietplanet/pagina-jupiter-img.jpg" alt="Distância entre o Planeta Terra e Jupiter">
+    </section>
+    <footer class="p-2 bg-black font-textoTitulo">
+        <h1 class="text-white text-center">© 2023 Quiet Planet. Todos os direitos reservados</h1>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>
